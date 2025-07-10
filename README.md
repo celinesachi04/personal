@@ -1,4 +1,4 @@
-# Celine Sachimath - Personal Portfolio Website
+# Celine Sachi - Personal Portfolio Website
 
 A beautiful, interactive, and responsive personal portfolio website built with HTML, CSS, and JavaScript. Features a modern pink-themed design with smooth animations and excellent user experience.
 
@@ -11,11 +11,11 @@ A beautiful, interactive, and responsive personal portfolio website built with H
 - **Modern UI/UX**: Clean, professional design with excellent visual hierarchy
 
 ### Interactive Elements
+- **Tab Navigation**: Dynamic tab system for seamless navigation between sections
 - **Floating Cards**: Animated cards in the hero section showcasing key skills
 - **Timeline Experience**: Interactive timeline showing work and educational experience
 - **Skill Tags**: Hoverable skill tags with smooth transitions
 - **Contact Form**: Functional contact form with validation and notifications
-- **Smooth Scrolling**: Seamless navigation between sections
 
 ### Technical Features
 - **Mobile Navigation**: Hamburger menu for mobile devices
@@ -83,13 +83,14 @@ The website is fully responsive with breakpoints at:
 - Edge
 - Mobile browsers
 
-## 📋 Sections
+## 📋 Tabs
 
-1. **Hero Section**: Introduction with animated floating cards
+1. **Home**: Introduction with animated floating cards
 2. **About**: Personal information, education, and coursework
 3. **Experience**: Timeline of work and educational experience
 4. **Skills**: Technical skills organized by category
-5. **Contact**: Contact form and social media links
+5. **Projects**: Showcase of data analysis and technical projects
+6. **Contact**: Contact form and social media links
 
 ## 🎯 Key Features Explained
 
@@ -101,6 +102,9 @@ The experience section uses a vertical timeline with alternating left/right posi
 
 ### Skill Categories
 Skills are organized into categories (Programming, Data Analysis, Languages, etc.) with interactive tags.
+
+### Project Showcase
+Displays technical projects with hover effects and technology tags.
 
 ### Contact Form
 Includes form validation, success/error notifications, and smooth animations.

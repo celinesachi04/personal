@@ -1,3 +1,45 @@
+// Tab Navigation System
+const navLinks = document.querySelectorAll('.nav-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+// Function to switch tabs
+function switchTab(tabName) {
+    // Remove active class from all nav links and tab contents
+    navLinks.forEach(link => link.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+    
+    // Add active class to clicked nav link and corresponding tab content
+    const activeLink = document.querySelector(`[data-tab="${tabName}"]`);
+    const activeContent = document.getElementById(tabName);
+    
+    if (activeLink && activeContent) {
+        activeLink.classList.add('active');
+        activeContent.classList.add('active');
+    }
+}
+
+// Add click event listeners to nav links
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tabName = link.getAttribute('data-tab');
+        switchTab(tabName);
+        
+        // Close mobile menu if open
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Add click event listeners to tab links (buttons that switch tabs)
+document.querySelectorAll('.tab-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tabName = link.getAttribute('data-tab');
+        switchTab(tabName);
+    });
+});
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -5,26 +47,6 @@ const navMenu = document.querySelector('.nav-menu');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
 });
 
 // Navbar background change on scroll
