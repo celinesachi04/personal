@@ -147,3 +147,5 @@ This project is open source and available under the [LICENSE](LICENSE) file.
 ---
 
 **Built with ❤️ using HTML, CSS, and JavaScript**
+
+<!-- Trigger GitHub Pages rebuild -->
