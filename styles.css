@@ -655,6 +655,28 @@ section {
     transform: translateY(-2px);
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--gradient-pink);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-link:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-pink);
+    background: var(--white);
+    color: var(--primary-pink);
+}
+
 /* Contact Section */
 .contact {
     background: var(--light-gray);
