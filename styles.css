@@ -585,6 +585,64 @@ section {
     transform: translateY(-2px);
 }
 
+/* Certification Styles */
+.certification-item {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--primary-pink);
+    transition: all 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.certification-content {
+    text-align: center;
+}
+
+.certification-content h4 {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.certification-content p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.certification-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--gradient-pink);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.certification-link:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-pink);
+    background: var(--white);
+    color: var(--primary-pink);
+}
+
+.certification-link i {
+    font-size: 1.1rem;
+}
+
 /* Projects Section */
 .projects {
     background: var(--white);
